@@ -17,6 +17,18 @@ namespace TriangleSolve.tests
         [TestFixture]
         public class TriangleTests
         {
+            [Test]
+            public void EquilateralTriangle_ValidResponse_Test()
+            {
+                // Arrange
+                int a = 5, b = 5, c = 5;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(a, b, c);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is an EQUILATERAL", result);
+            }
            [Test]
             public void InvalidResponse_InvalidResponse_Test1()
             {
