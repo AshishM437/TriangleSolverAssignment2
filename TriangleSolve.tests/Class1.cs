@@ -29,6 +29,44 @@ namespace TriangleSolve.tests
                 // Assert
                 Assert.AreEqual("The triangle is valid and is an EQUILATERAL", result);
             }
+             [Test]
+            public void IsoscelesTriangle_ValidResponse_Test1()
+            {
+                // Arrange
+                int a = 7, b = 7, c = 5;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(a, b, c);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
+            }
+
+            [Test]
+            public void IsoscelesTriangle_ValidResponse_Test2()
+            {
+                // Arrange
+                int a = 5, b = 6, c = 6;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(a, b, c);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
+            }
+
+            [Test]
+            public void IsoscelesTriangle_ValidResponse_Test3()
+            {
+                // Arrange
+                int a = 8, b = 6, c = 8;
+
+                // Act
+                string result = Triangle.AnalyzeTriangle(a, b, c);
+
+                // Assert
+                Assert.AreEqual("The triangle is valid and is an ISOSCELES", result);
+            }
            [Test]
             public void InvalidResponse_InvalidResponse_Test1()
             {
